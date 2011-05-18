@@ -1,4 +1,4 @@
-#summary URL USED WHILE PICKING EACH ITEM AND SENDING TO ORDER
+#summary URL used while picking each item and sending them to order
 #labels Phase-Design
 
 = Introduction =
