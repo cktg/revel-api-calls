@@ -18,4 +18,6 @@ startingseat : Integer - Starting number of seating arrangement
 }}}
 
 === Example ===
-_http://www.mydomainname.com/device/total_persons.asp?sess_id=XX&totalno=2&startingseat=5_
+{{{
+http://www.mydomainname.com/device/total_persons.asp?sess_id=XX&totalno=2&startingseat=5
+}}}
