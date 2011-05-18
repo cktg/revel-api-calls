@@ -1,4 +1,4 @@
-#summary URL USED TO PROCESS TOTAL PERSONS
+#summary URL USED TO PROCESS TOTAL NUMBER OF PERSONS
 #labels Phase-Design
 
 = Introduction =
