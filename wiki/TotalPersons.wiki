@@ -1,0 +1,21 @@
+#labels Phase-Design
+URL USED WHILE TOTAL PERSONS
+
+= Introduction =
+
+_{domainname}/device/total_persons.asp?_
+This URL is used to send the total number of persons to the server.
+
+<br>
+
+= Details =
+
+{{{
+URL parameters are:
+sess_id : GUID - The unique ID sent from the device (iPad or iPhone)
+totalno : Integer - Total number of persons
+startingseat : Integer - Starting number of seating arrangement
+}}}
+
+=== Example ===
+http://www.mydomainname.com/device/total_persons.asp?sess_id=XX&totalno=2&startingseat=5
