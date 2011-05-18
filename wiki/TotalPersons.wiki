@@ -1,5 +1,5 @@
 #labels Phase-Design
-URL USED WHILE TOTAL PERSONS
+URL USED TO PROCESS TOTAL PERSONS
 
 = Introduction =
 
