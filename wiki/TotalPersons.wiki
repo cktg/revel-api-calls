@@ -12,7 +12,7 @@ This URL is used to send the total number of persons to the server.
 
 URL parameters are:
 {{{
-sess_id : GUID - The unique ID sent from the device (iPad or iPhone)
+sess_id : String - The unique ID sent from the device (iPad or iPhone)
 totalno : Integer - Total number of persons
 startingseat : Integer - Starting number of seating arrangement
 }}}
