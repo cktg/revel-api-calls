@@ -3,7 +3,7 @@
 = Introduction =
 
 _{domainname}/device/order.asp?_
-This URL is used to send the total number of persons to the server.
+This URL is used when the order is completed.
 
 <br>
 
