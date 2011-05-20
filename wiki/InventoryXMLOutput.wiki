@@ -1,0 +1,21 @@
+#summary URL used to output the inventory in XML format
+
+= Introduction =
+
+{domainname}/device/stockupdate.asp? This URL is used to output the inventory items in XML format. 
+
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+locationid: Integer - Inventory location ID
+enteredon: DateTime - Date the inventory was entered/updated. This is a UNIX based time-stamp of a pure date (no hours, minutes, or seconds).
+If enteredon is not sent then only the records with current enteredon values will be shown.
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/stockupdate.asp?locationid=1
+}}}
