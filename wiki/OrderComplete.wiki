@@ -1,0 +1,55 @@
+#summary URL used when the order is complete
+
+= Introduction =
+
+_{domainname}/device/order.asp?_
+This URL is used to send the total number of persons to the server.
+
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+sess_id : GUID - The unique ID sent from the device
+totalprice: Decimal - Total price
+totaldisc: Decimal - Total discount
+totaldisc_text: String - Reason for discount
+totaltax: Decimal - Total tax
+tip: Decimal - Tip amount
+payable: Decimal - Net pay (totalprice - totaldics + totaltax + tip)
+restaurantid: Integer - Restaurant ID
+delivery_process: String - This is one of the following options: Takeout, Delivery, Eat in
+delivery_charge: Decimal - Delivery charge (Default value is 0)
+cust_email: String - Customer e-mail
+cust_phone: String - Customer phone
+order_time: String - Order time (This is an optional parameter)
+deliv_time: String - Delivery time (The values are either "Ready Now" or time value in HH:MM AM/PM format)
+pmt_method: String - Method of payment
+paid: Boolean - Has the order been paid? (Values are either 0 for false or 1 for true)
+comment: String - Comment or general instruction about the order
+device: Character - The device used to place the order (Values are 'i' for iPhone and 'p' for iPad)
+f_name: String - Customer first name
+l_name: String Customer last name
+show_in_xml: Boolean - Show in XML? (Values are either 0 for false or 1 for true)
+pin_number: Integer - User's PIN
+amt_cash: Decimal - Amount paid in cash
+amt_credit: Decimal - Amount paid with a credit card
+cheque_no: Integer - Check number
+chq_issue_bank: String - Issuing bank of the check
+cr_card_type: String - Credit card type
+trans_id: Integer - Transaction ID
+address1: String - Customer address1
+address2: String - Customer address2
+state: String - Customer state
+city: String - Customer city
+zip: Integer - Customer zip code
+date_anaversary: DateTime - Customer anniversary date
+bithday: DateTime - Customer birthday
+surcharge: Decimal - Surcharge (This is an optional parameter)
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/order.asp?sess_id=XX&totalprice=55&totaldisc=&totaldisc_text=&totaltax=5.50&tip=5&payable=65.50&restaurantid=1234&delivery_process=Takeout&delivery_charge=0&cust_email=&cust_phone=&deliv_time=Ready Now&pmt_method=Cash&paid=0&comment=&device=p&f_name=John&l_name=Smith&show_in_xml=1&pin_number=&amt_cash=65.50&amt_credit=&cheque_no=&chq_issue_bank=&cr_card_type=&trans_id=&address1=&address2=&state=&city=&zip=&date_anaversary=&bithday=
+}}}
