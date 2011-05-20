@@ -1,0 +1,21 @@
+#summary URL used to output open tables, bars, and orders in XML format
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/open_tables_bars_orders.asp?_
+This URL is used to output open tables, bars, and orders in XML format
+
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid : Integer - Restaurant location ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/open_tables_bars_orders.asp?rid=2
+}}}
