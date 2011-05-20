@@ -1,0 +1,29 @@
+#summary URL used to handle employees checkin and checkout
+
+= Introduction =
+
+_{domainname}/device/checkin_checkout.asp?_
+This URL is used to handle employees checkin and checkout process.
+
+===Notes:===
+  * Either the "timein" or "timeout" parameter can be set per request and not both of them.
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+employeeid: Integer - Employee ID
+restaurant_id: Integer - Restaurant ID
+timein: DateTime - Current date-time in UNIX format
+timeout: DateTime - Current date-time in UNIX format
+breakin: DateTime - Break in time (optional parameter)
+breakout: DateTime - Break out time (optional parameter)
+isaccept: Boolean (optional parameter)
+flag: Integer - HARDCODED 2 (optional parameter)
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/checkin_checkout.asp?employeeid=12&restaurantid=2&timein=2010-02-10
+}}}
