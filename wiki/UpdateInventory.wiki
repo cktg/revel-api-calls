@@ -1,0 +1,27 @@
+#summary URL used to update inventory
+
+= Introduction =
+
+_{domainname}/device/stockupdate.asp?_
+This URL is used to update inventory items.
+
+===Notes:===
+  * Every field should be posted in {{{'_sep'}}} delimited format. Make sure each value contain same number of {{{'_sep'}}} char-set.
+  * {{{'_sep'}}} is the separator for the delimited values
+
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+locationid: Integer - Inventory location ID
+itemid: Integer - Inventory item ID
+stock: Integer - Amount to stockup
+_sep : String - Separator for the values
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/stockupdate.asp?locationid=1&itemid=123&stock=15
+}}}
