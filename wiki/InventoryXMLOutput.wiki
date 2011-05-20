@@ -1,8 +1,9 @@
 #summary URL used to output the inventory in XML format
+#labels Phase-Design
 
 = Introduction =
 
-{domainname}/device/stockupdate.asp? This URL is used to output the inventory items in XML format. 
+{domainname}/device/xmloutput/stockupdate.asp? This URL is used to output the inventory items in XML format. 
 
 <br>
 
@@ -17,5 +18,5 @@ If enteredon is not sent then only the records with current enteredon values wil
 
 === Example ===
 {{{
-http://www.mydomainname.com/device/stockupdate.asp?locationid=1
+http://www.mydomainname.com/device/xmloutput/stockupdate.asp?locationid=1
 }}}
