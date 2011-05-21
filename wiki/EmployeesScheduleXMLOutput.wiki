@@ -1,0 +1,29 @@
+#summary URL used to get employees schedule as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/timesheet.asp?_
+This URL is used to get employees time schedule as XML.
+
+===Notes:===
+  * LocationID parameter is mandetory
+  * If pin is sent, only the relevent data will be shown; else all data
+  * Data output will show only dates ranging from yesterday and 14 days ahead
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+locationid : Integer - Location ID
+flag: Integer - Type of data (1 for timesheet and 2 for timeworked)
+pin: Integer - Employee PIN number
+nextweek: Boolean - Is this report for next week? (0 for current week and 1 for next week)
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/timesheet.asp?locationid=111&flag=1&pin=123456&nextweek=1
+}}}
