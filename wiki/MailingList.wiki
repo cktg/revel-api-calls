@@ -1,0 +1,29 @@
+#summary URL used to add a contact to a mailing list
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/email_list.asp?_
+This URL is used to add contacts to a mailing list.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+lastname: String - Last name
+firstname: Strig - First name
+email: String - E-mail address
+address1: String - Address line 1
+address2: String - Address line 2
+state: String - State name
+city: String - City name
+zip: Integer - Zip code
+last4digit_card: Integer - Last 4 digits of credit card (Optional parameter)
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/email_list.asp?lastname=Smith&firstname=John&email=js@me.com&address1=123Street&address2=Apt12&state=CA&city=MyCity&zip=12345
+}}}
