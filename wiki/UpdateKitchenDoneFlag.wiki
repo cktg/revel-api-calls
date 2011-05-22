@@ -1,0 +1,21 @@
+#summary URL used to update kitchen done flag
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/kitchen_done_update.asp?_
+This URL is used to update kitchen done flag.
+
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rec_id: Integer - The record ID of the item
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/kitchen_done_update.asp?rec_id=123
+}}}
