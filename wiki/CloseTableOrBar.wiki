@@ -1,0 +1,22 @@
+#summary URL used to close a table or bar
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/close_table_bar.asp?_
+This URL is used to close a table or bar.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+sess_id: String - Session ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/close_table_bar.asp?rid=123&sess_id=12345
+}}}
