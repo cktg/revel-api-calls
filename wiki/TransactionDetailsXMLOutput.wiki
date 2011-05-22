@@ -1,0 +1,21 @@
+#summary URL used to get transaction details as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/payment_transactions.asp?_
+This URL is used to get transaction details as XML.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+sess_id: String - Session ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/payment_transactions.asp?sess_id=123
+}}}
