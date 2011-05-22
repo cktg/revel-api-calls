@@ -1,0 +1,41 @@
+#summary URL used to get UPS shipping rates as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/ups_rate.asp?_
+This URL is used to get UPS shipping rates in XML format.
+  
+===Notes:===
+  * The following are valid UPS shipping products:
+    * 1DM: Next Day Air Early AM
+    * 1DA: Next Day Air
+    * 1DP: Next Day Air Saver
+    * 2DM: 2nd Day Air Early AM
+    * 2DA: 2nd Day Air
+    * 3DS: 3 Day Select
+    * GND: Ground
+    * STD: Canada Standard
+    * XPR: Worldwide Express
+    * XDM: Worldwide Express Plus
+    * XPD: Worldwide Expedited
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+product: String - UPS shipping method (see the list above for valid values)
+origCountry: String - Origination country
+origPostal: Integer - Origination zip code
+destPostal: Integer - Destination zip code
+destCountry: String - Destination country
+weight: Decimal - Package weight
+residential: Integer - Is this residential address? (1 for residential and 2 for commercial)
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/ups_rate.asp?product=1DM&origCountry=US&origPostal=12345&destPostal=54321&destCountry=US&weight=2.5&residential=1
+}}}
