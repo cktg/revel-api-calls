@@ -1,0 +1,22 @@
+#summary URL used to get employee's check-in/check-out status as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/checkin_checkout_status.asp?_
+This URL used to get employee's check-in/check-out status in XML format.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+pin: Integer - Employee PIN
+date: DateTime - Current date (UNIX format date)
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/checkin_checkout_status.asp?pin=1234&date=11-11-2011
+}}}
