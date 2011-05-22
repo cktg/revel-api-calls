@@ -1,0 +1,24 @@
+#summary URL used to save payouts
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/payouts.asp?_
+This URL is used to save payouts.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+pin: Integer - Employee PIN
+narration: String - Reason for payout
+po_date: DateTime - Payout date
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/payouts.asp?rid=123&pin=12345&narration=&po_date=10-10-2011
+}}}
