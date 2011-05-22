@@ -3,7 +3,7 @@
 
 = Introduction =
 
-_{domainname}/device/xmloutput/email_list.asp?_
+_{domainname}/device/email_list.asp?_
 This URL is used to add contacts to a mailing list.
   
 <br>
