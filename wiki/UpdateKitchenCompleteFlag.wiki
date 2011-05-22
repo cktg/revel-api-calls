@@ -12,7 +12,7 @@ This URL is used to update kitchen complete flag.
 
 URL parameters are:
 {{{
-rec_id: Integer - Receipt ID
+rec_id: Integer - The record ID of the item
 }}}
 
 === Example ===
