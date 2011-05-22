@@ -1,0 +1,21 @@
+#summary URL used to get the frequency of items ordered at a restaurant as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/items_ordered_frequency.asp_
+This URL is used to get the frequancy of items ordered at a restaurant in XML format.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/items_ordered_frequency.asp?rid=123
+}}}
