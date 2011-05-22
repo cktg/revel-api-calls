@@ -12,7 +12,7 @@ This URL is used to move items from a table to another table.
 
 URL parameters are:
 {{{
-rec_id: Integer - Receipt ID
+rec_id: Integer - The record ID of the item
 rid: Integer - Restaurant location ID
 table_id: Integer - New table ID
 sess_id: String - New session ID
