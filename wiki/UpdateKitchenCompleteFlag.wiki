@@ -1,0 +1,21 @@
+#summary URL used to update kitchen complete flag
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/kitchen_complete_update.asp?_
+This URL is used to update kitchen complete flag.
+
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rec_id: Integer - Receipt ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/kitchen_complete_update.asp?rec_id=123
+}}}
