@@ -3,7 +3,7 @@
 
 = Introduction =
 
-_{domainname}/device/xmloutput/cards.asp?_
+_{domainname}/device/cards.asp?_
 This URL is used to update gift cards and reward cards.
   
 <br>
