@@ -1,0 +1,22 @@
+#summary URL used to get all orders made today from iPAD as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/todays_orders.asp_
+This URL is used to get all orders made today from iPAD in XML format.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+pin: Integer - PIN
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/todays_orders.asp?rid=123&pin=10
+}}}
