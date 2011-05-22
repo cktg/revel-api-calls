@@ -1,0 +1,24 @@
+#summary URL used to return sub-ingredients as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/subingredients.asp?_
+This URL is used to return sub-ingredients in XML format.
+
+===Notes:===
+  * If the parent_id is blank, it will show all ingredients.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+parent_id: Integer - Ingredient ID (Optional parameter)
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/subingredients.asp?parent_id=33234
+}}}
