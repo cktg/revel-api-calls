@@ -1,0 +1,28 @@
+#summary URL used to upload a signature file
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/signature_image.asp?_
+This URL is used to upload a signature file.
+
+===Notes:===
+  * All images will be in PNG format.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+sess_id: String - Session ID
+upfile: String - Name of uploaded file
+tip: Decimal - Tip amount
+trans_id: Integer - Transaction ID
+gateway: String - Transaction gateway
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/signature_image.asp?sess_id=1234&upfile=MySign&tip=5.5&trans_id=123
+}}}
