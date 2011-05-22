@@ -1,0 +1,23 @@
+#summary URL used to move bar to table
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/bar_move_table_update.asp?_
+This URL is used to move bar to table.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+table_id: Integer - New table ID
+sess_id: String - New session ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/bar_move_table_update.asp?rid=123&table_id=10&sess_id=1234
+}}}
