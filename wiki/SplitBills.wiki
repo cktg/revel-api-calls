@@ -1,0 +1,33 @@
+#summary URL used to split a bill
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/split_bills.asp?_
+This URL is used to split a bill.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+sess_id: String - Session ID
+order_id: Integer - Order ID
+how_many_persons: Integer - Total number of persons
+person_number: Integer - A number given to a person
+paid: Boolean - Is the bill paid? (1 for yes and 0 for no)
+pmt_amt: Decimal - Payment amount
+pmt_mode: String - Payment type
+trans_id: Integer - Transaction ID
+person_name: String - Person's name (person paying)
+tip: Decimal - Tip amount
+total_amt_person: Decimal - Total amount per person
+total_amt_order: Decimal - Total order amount
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/split_bills.asp?rid=123&sess_id=1234&order_id=123&how_many_persons=2&paid=1&pmt_amt=100&tip=10&total_amt_person=55&total_amt_order=110
+}}}
