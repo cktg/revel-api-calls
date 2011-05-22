@@ -1,0 +1,23 @@
+#summary URL used to send e-mail to customer with the order details
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/items_email_notify.asp?_
+This URL is used to send e-mail to customer with the order details.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+sess_id: String - Session ID
+rid: Integer - Restaurant location ID
+email: String - Customer e-mail address
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/items_email_notify.asp?sess_id=1234&rid=123&email=js@abc.com
+}}}
