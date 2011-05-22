@@ -1,0 +1,21 @@
+#summary URL used to get total tips by employee as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/tip_amount_paid_credit_card.asp?_
+This URL used to get total tips by employee (only for orders paid with credit card) in XML format.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/tip_amount_paid_credit_card.asp?rid=123
+}}}
