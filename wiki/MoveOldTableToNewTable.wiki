@@ -1,0 +1,25 @@
+#summary URL used to move a table to another table
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/table_move_table_update.asp?_
+This URL is used to move a table to another table.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+table_id: Integer - New table ID
+old_table_id: Integer - Old table ID
+sess_id: String - New session ID
+old_sess_id: String - Old session ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/table_move_table_update.asp?rid=123&table_id=10&old_table_id=12&sess_id=1234&old_sess_id=12
+}}}
