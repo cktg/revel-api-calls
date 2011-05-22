@@ -1,0 +1,27 @@
+#summary URL used to get payouts as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/payouts.asp?_
+This URL is used to get payouts in XML format.
+  
+===Notes:===
+  * Send the parameters to search. If any parameter is not sent or sent blank, it will be ignored while searching.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+pin: Integer - Employee PIN
+narration: String - Reason for payout
+po_date: DateTime - Payout date
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/payouts.asp?rid=123&pin=12345&narration=&po_date=10-10-2011
+}}}
