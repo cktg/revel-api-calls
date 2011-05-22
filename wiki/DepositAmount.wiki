@@ -1,0 +1,35 @@
+#summary URL used to update deposit amount
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/deposit_amount.asp?_
+This URL is used to update deposit amount.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+name_first: String - First name
+last_name: String - Last name
+address1: String - Address line 1
+address2: String - Address line 2
+state: String - State name
+zip: Integer - Zip code
+city: String - City name
+phone: String - Phone number
+email: String - E-mail address
+fax: String - Fax number
+party_name: String - Party name
+date_party: DateTime - Party date
+amount_depoist: Decimal - Deposit amount
+amount_used: Decimal - Amount used
+balance: Decimal - Balance
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/deposit_amount.asp?name_first=John&last_name=Smith&address1=XXXX&address2=XXXXX&state=CA&zip=12345&city=&phone=&email=js@abc.com&fax=&party_name=&date_party=&amount_deposit=50&amount_used=50&balance=0
+}}}
