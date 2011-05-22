@@ -1,0 +1,21 @@
+#summary URL used to return order ingredients as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/ingredients.asp?_
+This URL is used to return order ingredients in XML format.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+dish_id: Integer - Product ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/ingredients.asp?dish_id=33234
+}}}
