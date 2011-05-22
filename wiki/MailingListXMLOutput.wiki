@@ -26,5 +26,5 @@ zip: Integer - Zip code
 
 === Example ===
 {{{
-http://www.mydomainname.com/device/email_list.asp?lastname=Smith&firstname=John&address1=123Street&address2=Apt12&state=CA&city=MyCity&zip=12345
+http://www.mydomainname.com/device/xmloutput/email_list.asp?lastname=Smith&firstname=John&address1=123Street&address2=Apt12&state=CA&city=MyCity&zip=12345
 }}}
