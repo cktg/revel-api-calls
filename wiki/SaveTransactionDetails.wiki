@@ -1,0 +1,23 @@
+#summary URL used to save transaction details
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/payment_transactions.asp?_
+This URL is used to save transaction details.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+sess_id: String - Session ID
+pmt_mode: Integer - Payment Mode
+trans_id: Integer - Transaction ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/payment_transactions.asp?sess_id=123&pmt_mode=0&trans_id=12
+}}}
