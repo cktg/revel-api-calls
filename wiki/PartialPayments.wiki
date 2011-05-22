@@ -1,0 +1,30 @@
+#summary URL used to send partial payment to server
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/part_payment.asp?_
+This URL is used to send partial payment to server.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+sess_id: String - Session ID
+rid: Integer - Restaurant location ID
+amt_cash: Decimal - Cash amount
+amt_credit: Decimal - Credit amount
+credit_trans_id: Integer - Transaction ID
+amt_chq: Decimal - Check amount
+chq_num: Integer - Check number
+amt_gift: Decimal - Gift card amount
+amt_reward: Decimal - Reward card amount
+amt_net_payable: Decimal - Net-pay amount
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/part_payment.asp?sess_id=1234&rid=123&amt_cash=15&amt_credit=&credit_trans_id=&amt_chq=25&chq_num=123&amt_gift=&amt_reward=&amt_net_payable=40
+}}}
