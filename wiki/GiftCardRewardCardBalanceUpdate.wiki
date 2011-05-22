@@ -1,0 +1,26 @@
+#summary URL used to update gift cards and reward cards balances
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/cards_balance_update.asp?_
+This URL is used to update gift cards and reward cards balances.
+
+===Notes:===
+  * Balance will be added to the previous balance. If to be deducted, send a negative value.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+card_id: Integer - Card ID
+card_type: Integer - Card type (0 for gift card and 1 for reward card)
+balance: Decimal - Card balance
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/cards_balance_update.asp?card_id=123&card_type=0&balance=50
+}}}
