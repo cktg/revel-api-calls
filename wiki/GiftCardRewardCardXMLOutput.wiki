@@ -19,7 +19,7 @@ card_id: Integer - Card ID
 card_type: Integer - Card type (0 for gift card and 1 for reward card)
 balance: Decimal - Card balance
 l_name: String - Last name
-f_name: Strig - First name
+f_name: String - First name
 address1: String - Address line 1
 address2: String - Address line 2
 state: String - State name
