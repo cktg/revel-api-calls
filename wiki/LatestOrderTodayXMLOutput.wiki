@@ -1,0 +1,22 @@
+#summary URL used to get latest order made today from iPAD as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/latest_order.asp_
+This URL is used to get latest order made today from iPAD in XML format.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+pin: Integer - PIN
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/latest_order.asp?rid=123
+}}}
