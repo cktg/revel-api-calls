@@ -1,0 +1,26 @@
+#summary URL used to get tip amount by employee PIN report as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/report_tip_amount_by_pin.asp?_
+This URL is used to get tip amount by employee PIN report in XML format.
+  
+===Notes:===
+  * Send the parameters to search. If any parameter is not sent or sent blank, it will be ignored while searching.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+to_date: DateTime - To date (UNIX date)
+from_date: DateTime - From date (UNIX date)
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/report_tip_amount_by_pin.asp?rid=123&to_date=12-12-2011&from_date=10-10-2011
+}}}
