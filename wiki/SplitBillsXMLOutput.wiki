@@ -1,0 +1,26 @@
+#summary URL used to return splitting a bill as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/split_bills.asp?_
+This URL used to return splitting a bill in XML format.
+
+===Notes:===
+  * The parameters sess_id and order_id are mutually exclusive.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+sess_id: String - Session ID
+order_id: Integer - Order ID
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/split_bills.asp?rid=123&sess_id=1234
+}}}
