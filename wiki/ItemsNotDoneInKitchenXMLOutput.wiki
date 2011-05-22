@@ -1,0 +1,22 @@
+#summary URL used to get a list of items not done in kitchen as XML
+#labels Phase-Design
+
+= Introduction =
+
+_{domainname}/device/xmloutput/kitchen_items.asp?_
+This URL used to get a list of all items not done in kitchen in XML format.
+  
+<br>
+
+= Details =
+
+URL parameters are:
+{{{
+rid: Integer - Restaurant location ID
+date: DateTime - Current date (UNIX format date)
+}}}
+
+=== Example ===
+{{{
+http://www.mydomainname.com/device/xmloutput/kitchen_items.asp?rid=123&date=11-11-2011
+}}}
